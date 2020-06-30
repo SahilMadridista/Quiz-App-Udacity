@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="firstquestion">1. Who is the current captain of Real Madrid ?</string>
+    <string name="secondquestion">2. How many Champions Leagues does Real Madrid have ?</string>
+    <string name="thirdquestion">3. Who is the all time top scorer for Real Madrid ?</string>
+    <string name="fourthquestion">4. Which stadium is the home ground of Real Madrid ?</string>
+    <string name="fifthquestion">5. Select the center back duo of Real Madrid ?</string>
+</resources>

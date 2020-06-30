@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        app:title="@string/app_name"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/colorPrimaryDark">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/firstquestion"
+                    android:padding="7dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:textColor="#000"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/first"
+                    android:scaleType="centerCrop"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:padding="7dp">
+
+                </ImageView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_group_one"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gareth Bale">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/answerone"
+                        android:text="Sergio Ramos">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Eden Hazard">
+
+                    </RadioButton>
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="#000">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/secondquestion"
+                    android:padding="7dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:textColor="#000"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/second"
+                    android:scaleType="centerCrop"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:padding="7dp">
+
+                </ImageView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#fff"
+                    android:id="@+id/ucl_et"
+                    android:inputType="number"
+                    android:layout_marginTop="4dp"
+                    android:hint="Your answer here"
+                    android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp"
+                    android:paddingRight="0dp">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="#000">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/thirdquestion"
+                    android:padding="7dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:textColor="#000"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/third"
+                    android:scaleType="centerCrop"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:padding="7dp">
+
+                </ImageView>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_group_two"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Karim Benzema">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sergio Ramos">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/answerthree"
+                        android:text="Cristiano Ronaldo">
+
+                    </RadioButton>
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="#000">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fourthquestion"
+                    android:padding="7dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:textColor="#000"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/sb"
+                    android:scaleType="centerCrop"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:padding="7dp">
+
+                </ImageView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#fff"
+                    android:id="@+id/stadium_et"
+                    android:inputType="textCapWords"
+                    android:layout_marginTop="4dp"
+                    android:hint="Your answer here"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="0dp">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="#000">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fifthquestion"
+                    android:padding="7dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:textColor="#000"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/fifth"
+                    android:scaleType="centerCrop"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:padding="7dp">
+
+                </ImageView>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/five_correct_one"
+                    android:layout_marginLeft="10dp"
+                    android:text="Varane">
+
+                </CheckBox>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/five_wrong_one"
+                    android:text="Hazard">
+
+                </CheckBox>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/five_correct_two"
+                    android:layout_marginLeft="10dp"
+                    android:text="Ramos">
+
+                </CheckBox>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/five_wrong_two"
+                    android:text="Benzema">
+
+                </CheckBox>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Submit"
+                    android:onClick="submitQuiz"
+                    android:id="@+id/submit_button"
+                    android:textColor="#fff"
+                    android:background="@color/colorPrimaryDark">
+
+                </Button>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
